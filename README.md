@@ -134,7 +134,7 @@ Use the tokens generated in the previous step to create kubconfig files for each
 
 ##### Example:admin-kubconfig.yml
 
-Save the content to admin-kubeconfig.yml
+Save the content to `admin-kubeconfig.yml`
 
 ```bash
 apiVersion: v1
@@ -157,12 +157,12 @@ users:
     token: <admin-token>   # Replace with the generated token
 
 ```
-# Replace <admin-token> with the acutal token generated for the admin serviceAccount.
-# Repeat this process for the general and others serviceaccount ,creating separate kubeconfig files.
+### Replace <admin-token> with the acutal token generated for the admin serviceAccount.
+#### Repeat this process for the general and others serviceaccount ,creating separate kubeconfig files.
 
-general-kubeconfig.yml
+`general-kubeconfig.yml`
 
-Save this content to general-kubeconfig.yml
+Save this content to `general-kubeconfig.yml`
 ```bash
 
 apiVersion: v1
@@ -185,9 +185,9 @@ users:
     token: <general-token>   # Replace with the generated token
 
 ```
-others-kubeconfig.yml
+`others-kubeconfig.yml`
 
-Save this content to others-kubeconfig.yml
+Save this content to `others-kubeconfig.yml`
 ```bash
 
 apiVersion: v1
@@ -213,12 +213,12 @@ users:
 
 # 4. Use the kubconfig files
 
-Set the KUBECONFIG environment variable to point to the desired kubconfig file.
+Set the `KUBECONFIG` environment variable to point to the desired kubconfig file.
 
 ```bash
 export KUBECONFIG=/path/to/admin-kubconfig.yml
 ```
-You can now use kubectl with permission of the admin seviceaccount .similarly,switch the KUBECONFIG environmnet variable to point to admin-kubeconfig.yml or general-kubconfig.yml or others-kubconfig.yml to use the respective SeviceAccount
+You can now use `kubectl` with permission of the admin seviceaccount .similarly,switch the `KUBECONFIG` environmnet variable to point to `admin-kubeconfig.yml` or `general-kubconfig.yml` or `others-kubconfig.ym`l to use the respective SeviceAccount
 
 ## Example commands:
 
