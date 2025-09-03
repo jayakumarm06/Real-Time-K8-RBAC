@@ -158,7 +158,7 @@ users:
 
 ```
 ### Replace <admin-token> with the acutal token generated for the admin serviceAccount.
-#### Repeat this process for the general and others serviceaccount ,creating separate kubeconfig files.
+Repeat this process for the general and others serviceaccount ,creating separate kubeconfig files.
 
 `general-kubeconfig.yml`
 
