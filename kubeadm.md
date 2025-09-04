@@ -124,7 +124,9 @@ kubectl version --client
 
 `sudo crictl config runtime-endpoint unix:///var/run/containerd/containerd.sock`
 
-9) initialize control plane and `Dont Add these steps to worker nodes`
+### ### --------------------------------------------- `Dont Add these steps to worker nodes`---------------------------------------------###
+
+9) initialize control plane 
 
 ```
 sudo kubeadm init --pod-network-cidr=192.168.0.0/16 --apiserver-advertise-address=172.31.89.68 --node-name master
@@ -147,7 +149,7 @@ curl https://raw.githubusercontent.com/projectcalico/calico/v3.28.0/manifests/cu
 
 kubectl apply -f custom-resources.yaml
 ```
-### --------------------------------------------- `Upto Here`---------------------------------------------###
+### ### --------------------------------------------- `Upto Here`---------------------------------------------###
 ### Perform the below steps on both the worker nodes
 
 - Perform steps 1-8 on both the nodes
