@@ -124,7 +124,7 @@ kubectl version --client
 
 `sudo crictl config runtime-endpoint unix:///var/run/containerd/containerd.sock`
 
-##### ### ----------------- `Dont Add these steps to worker nodes`------------------------------------------###
+##### ### ----------------- `Dont Add below these steps to worker nodes`------------------------------------------###
 
 9) initialize control plane 
 
